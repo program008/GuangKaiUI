@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_scene"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/rl_scene_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/iv_scene_speaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/tv_scene_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_scene_speaking"
+            android:text="有哪些理财产品"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_scene_back_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:padding="20dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/tv_scene_screenShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_scene_back_homepage"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="我是建行智能机器人小龙人/您可以这样问我：存款利率是多少/怎么办理粤通卡/怎么开通云闪付/信用卡丢了怎么办"
+        android:textSize="28sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_scene_btnPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <ImageView
+        android:id="@+id/iv_scene_btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_btn_bottoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scene_center_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_btn_bottoms"
+        android:layout_below="@id/tv_scene_screenShow"
+        android:layout_toLeftOf="@id/iv_scene_btnNext"
+        android:layout_toRightOf="@id/iv_scene_btnPre"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scene_center_btns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_btn_bottoms"
+        android:layout_below="@id/tv_scene_screenShow"
+        android:layout_toLeftOf="@id/iv_scene_btnNext"
+        android:layout_toRightOf="@id/iv_scene_btnPre"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        ></LinearLayout>
+
+
+</RelativeLayout>
